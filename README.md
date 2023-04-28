@@ -1,8 +1,8 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). \
 Outcome : (Eng)https://2zuom-myaaa-aaaal-acgaa-cai.icp0.io \
-最終成果: https://oio3g-riaaa-aaaal-acfva-cai.icp0.io \
+最終成果: https://oio3g-riaaa-aaaal-acfva-cai.icp0.io 
 
 ## Available Scripts
 
