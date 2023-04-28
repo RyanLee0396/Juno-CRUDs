@@ -35,7 +35,6 @@ function App() {
 
   const [inputKey, setinputKey] = useState("");
   const [docgot, setDocgot] = useState("");
-  const [timestamp, setTimestamp] = useState("");
   const [timestring, setTimestring] = useState("");
   const [CreatedTime, setCreatedTime] = useState("");
 
@@ -58,7 +57,6 @@ function App() {
     setDocgot(doc.data);
     const updatedTime = doc.updated_at;
     const createdTime = doc.created_at;
-    setTimestamp(updatedTime);
     const date = new Date(Number(updatedTime / 1_000_000n));
     const date2 = new Date(Number(createdTime / 1_000_000n));
     setTimestring(date.toLocaleString('en-US', options) + "  \n以纳秒计时: " + updatedTime.toString());
@@ -70,13 +68,20 @@ function App() {
   //更新单一联系人资讯/联系人格式
  const [upDatePhone, setupDatePhone] = useState("");
   const updatedoc = async () => {
+	  const doc = await getDoc({
+      collection: "contacts",
+      key: inputKey,
+    }); 
+	 const timestamp=doc.updated_at;
+	  const oldName=doc.data.Name;
+	  
     await setDoc({
       collection: "contacts",
       doc: {
         key: inputKey,
         updated_at: timestamp,
         data: {
-          Name: docgot.Name,
+          Name: oldName,
           Phone: upDatePhone,
         }
       },
@@ -105,6 +110,13 @@ function App() {
  //删除联系人
 const [deleteKey, setdeleteKey] = useState("");
 const deleteDoc = async () => {
+	const doc = await getDoc({
+      collection: "contacts",
+      key: inputKey,
+    }); 
+	const timestamp=doc.updated_at;
+	
+	
   await delDoc({
     collection: "contacts",
     doc: {
