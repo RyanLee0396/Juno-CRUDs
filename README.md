@@ -1,8 +1,8 @@
 # A little WebApp
 
 This application demonstrate CRUDs on Juno datastore using React \
-这个小应用演示了Juno数据库的增删查改 \
 Outcome(Eng) : https://2zuom-myaaa-aaaal-acgaa-cai.icp0.io \
+这个小应用演示了Juno数据库的增删查改 \
 最終成果(中文): https://oio3g-riaaa-aaaal-acfva-cai.icp0.io 
 
 ## 中文指引
