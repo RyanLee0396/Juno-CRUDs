@@ -112,7 +112,7 @@ const [deleteKey, setdeleteKey] = useState("");
 const deleteDoc = async () => {
 	const doc = await getDoc({
       collection: "contacts",
-      key: inputKey,
+      key: deleteKey,
     }); 
 	const timestamp=doc.updated_at;
 	
