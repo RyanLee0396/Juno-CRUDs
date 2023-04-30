@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# A little WebApp
 
 This application demonstrate CRUDs on Juno datastore using React \
 Outcome(Eng) : https://2zuom-myaaa-aaaal-acgaa-cai.icp0.io \
