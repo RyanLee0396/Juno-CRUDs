@@ -1,8 +1,8 @@
-# Some examples demonstrating basic functions of Juno
+# 用于演示 Juno 功能的一些基本例子
 
-Find information about Juno here:https://console.juno.build/ \
-Framework : React \
-Consist of CRUD operations and Authetication till now \
+关于Juno :https://console.juno.build/ \
+框架使用 : React \
+目前已经更新了 CRUD 以及身份验证。
 
 
 ## 中文指引
