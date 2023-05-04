@@ -1,7 +1,7 @@
 # 用于演示 Juno 功能的一些基本例子
 
 关于Juno :https://console.juno.build/ \
-框架使用 : React \
+框架使用 : ReactJS \
 目前已经更新了 CRUD 以及身份验证。
 
 
